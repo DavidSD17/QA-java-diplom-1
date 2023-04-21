@@ -32,4 +32,11 @@ public class BunTest {
 
     }
 
+    @Test
+    public void checkPriceBun(){
+        Bun bun = new Bun(expectedName,price);
+        Assert.assertEquals(price,bun.getPrice(),0);
+
+    }
+
 }

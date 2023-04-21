@@ -8,10 +8,19 @@ import praktikum.Ingredient;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnitRunner;
+import praktikum.IngredientType;
 
+@RunWith(MockitoJUnitRunner.class)
 public class IngredientDBTest extends Database{
     private final List<Ingredient> ingredients = new ArrayList<>();
 
+
+    @Mock
+    Database database;
     @Test
     public void availableIngredientTest(){
         Database database = new Database();

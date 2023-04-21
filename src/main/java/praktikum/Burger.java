@@ -26,8 +26,9 @@ public class Burger {
         ingredients.remove(index);
     }
 
-    public void moveIngredient(int index, int newIndex) {
+    public Burger moveIngredient(int index, int newIndex) {
         ingredients.add(newIndex, ingredients.remove(index));
+        return this;
     }
 
     public float getPrice() {
