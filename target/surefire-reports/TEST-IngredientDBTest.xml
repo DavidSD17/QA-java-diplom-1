@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="IngredientDBTest" time="0.025" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="IngredientDBTest" time="0.033" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.1.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -60,6 +60,6 @@
     <property name="java.vendor.version" value="Temurin-16.0.2+7"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="IngredientDBTest" name="checkAvailableBuns" time="0.024"/>
+  <testcase classname="IngredientDBTest" name="checkAvailableBuns" time="0.032"/>
   <testcase classname="IngredientDBTest" name="availableIngredientTest" time="0.001"/>
 </testsuite>
