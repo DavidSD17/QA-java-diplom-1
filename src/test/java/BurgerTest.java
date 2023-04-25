@@ -67,7 +67,7 @@ public class BurgerTest {
 
     @Test
     public void checkReceipt() {
-        List<Ingredient> ingredients = new ArrayList<>();
+
         Bun bun = new Bun("black bun", 100);
         Burger burger = new Burger();
         burger.setBuns(bun);
