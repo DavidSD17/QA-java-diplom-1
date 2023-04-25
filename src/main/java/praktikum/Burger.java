@@ -10,7 +10,6 @@ import java.util.List;
  * Можно распечать чек с информацией о бургере.
  */
 public class Burger {
-
     public Bun bun;
     public List<Ingredient> ingredients = new ArrayList<>();
 
@@ -26,9 +25,8 @@ public class Burger {
         ingredients.remove(index);
     }
 
-    public Burger moveIngredient(int index, int newIndex) {
+    public void moveIngredient(int index, int newIndex) {
         ingredients.add(newIndex, ingredients.remove(index));
-        return this;
     }
 
     public float getPrice() {

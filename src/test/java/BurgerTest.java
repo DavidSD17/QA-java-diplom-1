@@ -21,7 +21,10 @@ import org.mockito.junit.MockitoJUnitRunner;
 @RunWith(MockitoJUnitRunner.class)
 public class BurgerTest {
 
-    public List<Ingredient> ingredients = new ArrayList<>();
+    Burger burger;
+    Ingredient ingredient1 = new Ingredient(SAUCE,"hot sauce",100);
+    Ingredient ingredient2 = new Ingredient(FILLING,"dinosaur",200);
+
 
     @Test
     public void checkAddIngredient(){
@@ -64,6 +67,20 @@ public class BurgerTest {
         assertNotEquals(oldReceipt,newReceipt);
 
     }
+
+    @Test
+    public void checkMoveIngredientSimple() {
+        burger = new Burger();
+        burger.addIngredient(ingredient1);
+        burger.addIngredient(ingredient2);
+        System.out.println(burger.ingredients.get(0));
+
+        burger.moveIngredient(1,0);
+
+        Assert.assertEquals(ingredient2,burger.ingredients.get(0));
+
+    }
+
 
     @Test
     public void checkReceipt() {
